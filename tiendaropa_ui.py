@@ -170,12 +170,12 @@ class Ui_MainWindow(object):
         MainWindow.addToolBar(Qt.TopToolBarArea, self.toolBar)
 
         self.retranslateUi(MainWindow)
-        self.pb_agregar_pantalon.clicked.connect(MainWindow.agregarpant)
-        self.pb_quitar_pantalon.clicked.connect(MainWindow.quitarpant)
-        self.pb_agregar_buzo.clicked.connect(MainWindow.agregarbuzo)
-        self.pb_quitar_buzo.clicked.connect(MainWindow.quitarbuzo)
-        self.pb_agregar_remera.clicked.connect(MainWindow.agregarremera)
-        self.pb_quitar_remera.clicked.connect(MainWindow.quitarremera)
+        self.pb_agregar_pantalon.clicked.connect(MainWindow.agregar_pantalon)
+        self.pb_quitar_pantalon.clicked.connect(MainWindow.quitar_pantalon)
+        self.pb_agregar_buzo.clicked.connect(MainWindow.agregar_buzo)
+        self.pb_quitar_buzo.clicked.connect(MainWindow.quitar_buzo)
+        self.pb_agregar_remera.clicked.connect(MainWindow.agregar_remera)
+        self.pb_quitar_remera.clicked.connect(MainWindow.agregar_remera)
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
