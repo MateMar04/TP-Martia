@@ -12,31 +12,39 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.ventana_lista = ListWindow()
-        self.ventana_lista.show()
+        self.pantalones = 0
+        self.buzos = 0
+        self.remeras = 0
 
     @Slot()
     def agregar_pantalon(self):
-        pass
+        self.pantalones += int(self.ui.le_cant_pantalon.text())
+        print(self.pantalones)
 
     @Slot()
     def quitar_pantalon(self):
-        pass
+        self.pantalones -= int(self.ui.le_cant_pantalon.text())
+        print(self.pantalones)
 
     @Slot()
     def agregar_buzo(self):
-        pass
+        self.buzos += int(self.ui.le_cant_buzo.text())
+        print(self.buzos)
 
     @Slot()
     def quitar_buzo(self):
-        pass
+        self.buzos -= int(self.ui.le_cant_buzo.text())
+        print(self.buzos)
 
     @Slot()
     def agregar_remera(self):
-        pass
+        self.remeras += int(self.ui.le_cant_remera.text())
+        print(self.remeras)
 
     @Slot()
     def quitar_remera(self):
-        pass
+        self.remeras -= int(self.ui.le_cant_remera.text())
+        print(self.remeras)
 
 
 if __name__ == "__main__":
