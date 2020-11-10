@@ -1,5 +1,3 @@
-
-
 import sys
 from PySide2.QtWidgets import QMainWindow, QApplication
 from PySide2.QtCore import Slot
