@@ -7,6 +7,7 @@ from PySide2.QtCore import Slot
 from tiendaropa_ui import Ui_MainWindow
 from ventana_lista import ListWindow
 
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -16,27 +17,27 @@ class MainWindow(QMainWindow):
         self.ventana_lista.show()
 
     @Slot()
-    def agregarpant(self):
+    def agregar_pantalon(self):
         pass
 
     @Slot()
-    def quitarpant(self):
+    def quitar_pantalon(self):
         pass
 
     @Slot()
-    def agregarbuzo(self):
+    def agregar_buzo(self):
         pass
 
     @Slot()
-    def quitarbuzo(self):
+    def quitar_buzo(self):
         pass
 
     @Slot()
-    def agregarremera(self):
+    def agregar_remera(self):
         pass
 
     @Slot()
-    def quitarremera(self):
+    def quitar_remera(self):
         pass
 
 
