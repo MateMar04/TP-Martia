@@ -26,10 +26,10 @@ class Ui_MainWindow(object):
 "")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.label = QLabel(self.centralwidget)
-        self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(10, 390, 121, 31))
-        self.label.setStyleSheet(u"b\n"
+        self.lb_stock_2 = QLabel(self.centralwidget)
+        self.lb_stock_2.setObjectName(u"lb_stock_2")
+        self.lb_stock_2.setGeometry(QRect(10, 390, 121, 31))
+        self.lb_stock_2.setStyleSheet(u"b\n"
 "background-color: rgb(65, 221, 218);")
         self.formLayoutWidget = QWidget(self.centralwidget)
         self.formLayoutWidget.setObjectName(u"formLayoutWidget")
@@ -52,18 +52,18 @@ class Ui_MainWindow(object):
 
         self.gridLayout = QGridLayout()
         self.gridLayout.setObjectName(u"gridLayout")
-        self.pb_pantalonagr = QPushButton(self.formLayoutWidget)
-        self.pb_pantalonagr.setObjectName(u"pb_pantalonagr")
-        self.pb_pantalonagr.setStyleSheet(u"background-color: rgb(173, 127, 168);")
+        self.pb_agregar_pantalon = QPushButton(self.formLayoutWidget)
+        self.pb_agregar_pantalon.setObjectName(u"pb_agregar_pantalon")
+        self.pb_agregar_pantalon.setStyleSheet(u"background-color: rgb(173, 127, 168);")
 
-        self.gridLayout.addWidget(self.pb_pantalonagr, 0, 0, 1, 1)
+        self.gridLayout.addWidget(self.pb_agregar_pantalon, 0, 0, 1, 1)
 
-        self.pb_quitarpant = QPushButton(self.formLayoutWidget)
-        self.pb_quitarpant.setObjectName(u"pb_quitarpant")
-        self.pb_quitarpant.setStyleSheet(u"background-color: rgb(136, 138, 133);\n"
+        self.pb_quitar_pantalon = QPushButton(self.formLayoutWidget)
+        self.pb_quitar_pantalon.setObjectName(u"pb_quitar_pantalon")
+        self.pb_quitar_pantalon.setStyleSheet(u"background-color: rgb(136, 138, 133);\n"
 "background-color: rgb(173, 127, 168);")
 
-        self.gridLayout.addWidget(self.pb_quitarpant, 0, 1, 1, 1)
+        self.gridLayout.addWidget(self.pb_quitar_pantalon, 0, 1, 1, 1)
 
 
         self.formLayout.setLayout(1, QFormLayout.FieldRole, self.gridLayout)
@@ -99,39 +99,39 @@ class Ui_MainWindow(object):
 
         self.formLayout.setWidget(8, QFormLayout.LabelRole, self.cantidad)
 
-        self.le_remera = QLineEdit(self.formLayoutWidget)
-        self.le_remera.setObjectName(u"le_remera")
-        self.le_remera.setStyleSheet(u"\n"
+        self.le_cant_remera = QLineEdit(self.formLayoutWidget)
+        self.le_cant_remera.setObjectName(u"le_cant_remera")
+        self.le_cant_remera.setStyleSheet(u"\n"
 "background-color: rgb(136, 138, 133);")
 
-        self.formLayout.setWidget(8, QFormLayout.FieldRole, self.le_remera)
+        self.formLayout.setWidget(8, QFormLayout.FieldRole, self.le_cant_remera)
 
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.pb_buzoagr = QPushButton(self.formLayoutWidget)
-        self.pb_buzoagr.setObjectName(u"pb_buzoagr")
+        self.pb_agregar_buzo = QPushButton(self.formLayoutWidget)
+        self.pb_agregar_buzo.setObjectName(u"pb_agregar_buzo")
 
-        self.horizontalLayout.addWidget(self.pb_buzoagr)
+        self.horizontalLayout.addWidget(self.pb_agregar_buzo)
 
-        self.pb_quitbuzp = QPushButton(self.formLayoutWidget)
-        self.pb_quitbuzp.setObjectName(u"pb_quitbuzp")
+        self.pb_quitar_buzo = QPushButton(self.formLayoutWidget)
+        self.pb_quitar_buzo.setObjectName(u"pb_quitar_buzo")
 
-        self.horizontalLayout.addWidget(self.pb_quitbuzp)
+        self.horizontalLayout.addWidget(self.pb_quitar_buzo)
 
 
         self.formLayout.setLayout(4, QFormLayout.FieldRole, self.horizontalLayout)
 
         self.horizontalLayout_2 = QHBoxLayout()
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.pb_remeraagr = QPushButton(self.formLayoutWidget)
-        self.pb_remeraagr.setObjectName(u"pb_remeraagr")
+        self.pb_agregar_remera = QPushButton(self.formLayoutWidget)
+        self.pb_agregar_remera.setObjectName(u"pb_agregar_remera")
 
-        self.horizontalLayout_2.addWidget(self.pb_remeraagr)
+        self.horizontalLayout_2.addWidget(self.pb_agregar_remera)
 
-        self.pb_remeraquit = QPushButton(self.formLayoutWidget)
-        self.pb_remeraquit.setObjectName(u"pb_remeraquit")
+        self.pb_quitar_remera = QPushButton(self.formLayoutWidget)
+        self.pb_quitar_remera.setObjectName(u"pb_quitar_remera")
 
-        self.horizontalLayout_2.addWidget(self.pb_remeraquit)
+        self.horizontalLayout_2.addWidget(self.pb_quitar_remera)
 
 
         self.formLayout.setLayout(7, QFormLayout.FieldRole, self.horizontalLayout_2)
@@ -146,26 +146,22 @@ class Ui_MainWindow(object):
 
         self.formLayout.setWidget(2, QFormLayout.LabelRole, self.label_6)
 
-        self.le_buzo = QLineEdit(self.formLayoutWidget)
-        self.le_buzo.setObjectName(u"le_buzo")
-        self.le_buzo.setStyleSheet(u"background-color: rgb(136, 138, 133);")
+        self.le_cant_buzo = QLineEdit(self.formLayoutWidget)
+        self.le_cant_buzo.setObjectName(u"le_cant_buzo")
+        self.le_cant_buzo.setStyleSheet(u"background-color: rgb(136, 138, 133);")
 
-        self.formLayout.setWidget(5, QFormLayout.FieldRole, self.le_buzo)
+        self.formLayout.setWidget(5, QFormLayout.FieldRole, self.le_cant_buzo)
 
-        self.le_pantalon = QLineEdit(self.formLayoutWidget)
-        self.le_pantalon.setObjectName(u"le_pantalon")
-        self.le_pantalon.setStyleSheet(u"background-color: rgb(136, 138, 133);")
+        self.le_cant_pantalon = QLineEdit(self.formLayoutWidget)
+        self.le_cant_pantalon.setObjectName(u"le_cant_pantalon")
+        self.le_cant_pantalon.setStyleSheet(u"background-color: rgb(136, 138, 133);")
 
-        self.formLayout.setWidget(2, QFormLayout.FieldRole, self.le_pantalon)
+        self.formLayout.setWidget(2, QFormLayout.FieldRole, self.le_cant_pantalon)
 
         self.lb_stock = QLabel(self.centralwidget)
         self.lb_stock.setObjectName(u"lb_stock")
         self.lb_stock.setGeometry(QRect(110, 390, 421, 21))
         MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QMenuBar(MainWindow)
-        self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 788, 21))
-        MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
         MainWindow.setStatusBar(self.statusbar)
@@ -174,12 +170,12 @@ class Ui_MainWindow(object):
         MainWindow.addToolBar(Qt.TopToolBarArea, self.toolBar)
 
         self.retranslateUi(MainWindow)
-        self.pb_pantalonagr.clicked.connect(MainWindow.agregarpant)
-        self.pb_quitarpant.clicked.connect(MainWindow.quitarpant)
-        self.pb_buzoagr.clicked.connect(MainWindow.agregarbuzo)
-        self.pb_quitbuzp.clicked.connect(MainWindow.quitarbuzo)
-        self.pb_remeraagr.clicked.connect(MainWindow.agregarremera)
-        self.pb_remeraquit.clicked.connect(MainWindow.quitarremera)
+        self.pb_agregar_pantalon.clicked.connect(MainWindow.agregarpant)
+        self.pb_quitar_pantalon.clicked.connect(MainWindow.quitarpant)
+        self.pb_agregar_buzo.clicked.connect(MainWindow.agregarbuzo)
+        self.pb_quitar_buzo.clicked.connect(MainWindow.quitarbuzo)
+        self.pb_agregar_remera.clicked.connect(MainWindow.agregarremera)
+        self.pb_quitar_remera.clicked.connect(MainWindow.quitarremera)
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
@@ -187,9 +183,9 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
 #if QT_CONFIG(tooltip)
-        self.label.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><br/></p></body></html>", None))
+        self.lb_stock_2.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><br/></p></body></html>", None))
 #endif // QT_CONFIG(tooltip)
-        self.label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600; font-style:italic; color:#000000;\">stock</span></p></body></html>", None))
+        self.lb_stock_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600; font-style:italic; color:#000000;\">stock</span></p></body></html>", None))
 #if QT_CONFIG(tooltip)
         self.label_2.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><br/></p></body></html>", None))
 #endif // QT_CONFIG(tooltip)
@@ -201,8 +197,8 @@ class Ui_MainWindow(object):
         self.cb_pantalon.setItemText(0, QCoreApplication.translate("MainWindow", u"jean", None))
         self.cb_pantalon.setItemText(1, QCoreApplication.translate("MainWindow", u"short", None))
 
-        self.pb_pantalonagr.setText(QCoreApplication.translate("MainWindow", u"agregar pantalon", None))
-        self.pb_quitarpant.setText(QCoreApplication.translate("MainWindow", u"quitar pantalon", None))
+        self.pb_agregar_pantalon.setText(QCoreApplication.translate("MainWindow", u"agregar pantalon", None))
+        self.pb_quitar_pantalon.setText(QCoreApplication.translate("MainWindow", u"quitar pantalon", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"right\"><span style=\" font-weight:600; font-style:italic; color:#8f5902;\">buzo</span></p></body></html>", None))
         self.cb_buzo.setItemText(0, QCoreApplication.translate("MainWindow", u"deportivo", None))
         self.cb_buzo.setItemText(1, QCoreApplication.translate("MainWindow", u"clasico", None))
@@ -212,17 +208,17 @@ class Ui_MainWindow(object):
         self.cb_remera.setItemText(1, QCoreApplication.translate("MainWindow", u"larga", None))
 
         self.cantidad.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-weight:600; font-style:italic; color:#2e3436;\">cantidad</span></p></body></html>", None))
-        self.le_remera.setInputMask(QCoreApplication.translate("MainWindow", u"999", None))
-        self.le_remera.setText("")
-        self.pb_buzoagr.setText(QCoreApplication.translate("MainWindow", u"agregar buzo", None))
-        self.pb_quitbuzp.setText(QCoreApplication.translate("MainWindow", u"quitar buzo", None))
-        self.pb_remeraagr.setText(QCoreApplication.translate("MainWindow", u"agregar remera", None))
-        self.pb_remeraquit.setText(QCoreApplication.translate("MainWindow", u"quitar remera", None))
+        self.le_cant_remera.setInputMask(QCoreApplication.translate("MainWindow", u"999", None))
+        self.le_cant_remera.setText("")
+        self.pb_agregar_buzo.setText(QCoreApplication.translate("MainWindow", u"agregar buzo", None))
+        self.pb_quitar_buzo.setText(QCoreApplication.translate("MainWindow", u"quitar buzo", None))
+        self.pb_agregar_remera.setText(QCoreApplication.translate("MainWindow", u"agregar remera", None))
+        self.pb_quitar_remera.setText(QCoreApplication.translate("MainWindow", u"quitar remera", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-weight:600; font-style:italic; color:#2e3436;\">cantidad</span></p></body></html>", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-weight:600; color:#2e3436;\">cantidad</span></p></body></html>", None))
-        self.le_buzo.setInputMask(QCoreApplication.translate("MainWindow", u"999", None))
-        self.le_buzo.setText("")
-        self.le_pantalon.setInputMask(QCoreApplication.translate("MainWindow", u"999", None))
+        self.le_cant_buzo.setInputMask(QCoreApplication.translate("MainWindow", u"999", None))
+        self.le_cant_buzo.setText("")
+        self.le_cant_pantalon.setInputMask(QCoreApplication.translate("MainWindow", u"999", None))
         self.lb_stock.setText("")
         self.toolBar.setWindowTitle(QCoreApplication.translate("MainWindow", u"toolBar", None))
     # retranslateUi

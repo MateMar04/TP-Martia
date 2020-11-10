@@ -19,7 +19,7 @@ background-color: rgb(173, 127, 168);
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="lb_stock_2">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -83,7 +83,7 @@ p, li { white-space: pre-wrap; }
      <item row="1" column="1">
       <layout class="QGridLayout" name="gridLayout">
        <item row="0" column="0">
-        <widget class="QPushButton" name="pb_pantalonagr">
+        <widget class="QPushButton" name="pb_agregar_pantalon">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(173, 127, 168);</string>
          </property>
@@ -93,7 +93,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QPushButton" name="pb_quitarpant">
+        <widget class="QPushButton" name="pb_quitar_pantalon">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(136, 138, 133);
 background-color: rgb(173, 127, 168);</string>
@@ -161,7 +161,7 @@ background-color: rgb(173, 127, 168);</string>
       </widget>
      </item>
      <item row="8" column="1">
-      <widget class="QLineEdit" name="le_remera">
+      <widget class="QLineEdit" name="le_cant_remera">
        <property name="styleSheet">
         <string notr="true">
 background-color: rgb(136, 138, 133);</string>
@@ -177,14 +177,14 @@ background-color: rgb(136, 138, 133);</string>
      <item row="4" column="1">
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QPushButton" name="pb_buzoagr">
+        <widget class="QPushButton" name="pb_agregar_buzo">
          <property name="text">
           <string>agregar buzo</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pb_quitbuzp">
+        <widget class="QPushButton" name="pb_quitar_buzo">
          <property name="text">
           <string>quitar buzo</string>
          </property>
@@ -195,14 +195,14 @@ background-color: rgb(136, 138, 133);</string>
      <item row="7" column="1">
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="QPushButton" name="pb_remeraagr">
+        <widget class="QPushButton" name="pb_agregar_remera">
          <property name="text">
           <string>agregar remera</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pb_remeraquit">
+        <widget class="QPushButton" name="pb_quitar_remera">
          <property name="text">
           <string>quitar remera</string>
          </property>
@@ -225,7 +225,7 @@ background-color: rgb(136, 138, 133);</string>
       </widget>
      </item>
      <item row="5" column="1">
-      <widget class="QLineEdit" name="le_buzo">
+      <widget class="QLineEdit" name="le_cant_buzo">
        <property name="styleSheet">
         <string notr="true">background-color: rgb(136, 138, 133);</string>
        </property>
@@ -238,7 +238,7 @@ background-color: rgb(136, 138, 133);</string>
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QLineEdit" name="le_pantalon">
+      <widget class="QLineEdit" name="le_cant_pantalon">
        <property name="styleSheet">
         <string notr="true">background-color: rgb(136, 138, 133);</string>
        </property>
@@ -263,16 +263,6 @@ background-color: rgb(136, 138, 133);</string>
     </property>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>788</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
    <property name="windowTitle">
@@ -289,7 +279,7 @@ background-color: rgb(136, 138, 133);</string>
  <resources/>
  <connections>
   <connection>
-   <sender>pb_pantalonagr</sender>
+   <sender>pb_agregar_pantalon</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>agregarpant()</slot>
@@ -305,7 +295,7 @@ background-color: rgb(136, 138, 133);</string>
    </hints>
   </connection>
   <connection>
-   <sender>pb_quitarpant</sender>
+   <sender>pb_quitar_pantalon</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>quitarpant()</slot>
@@ -321,7 +311,7 @@ background-color: rgb(136, 138, 133);</string>
    </hints>
   </connection>
   <connection>
-   <sender>pb_buzoagr</sender>
+   <sender>pb_agregar_buzo</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>agregarbuzo()</slot>
@@ -337,7 +327,7 @@ background-color: rgb(136, 138, 133);</string>
    </hints>
   </connection>
   <connection>
-   <sender>pb_quitbuzp</sender>
+   <sender>pb_quitar_buzo</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>quitarbuzo()</slot>
@@ -353,7 +343,7 @@ background-color: rgb(136, 138, 133);</string>
    </hints>
   </connection>
   <connection>
-   <sender>pb_remeraagr</sender>
+   <sender>pb_agregar_remera</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>agregarremera()</slot>
@@ -369,7 +359,7 @@ background-color: rgb(136, 138, 133);</string>
    </hints>
   </connection>
   <connection>
-   <sender>pb_remeraquit</sender>
+   <sender>pb_quitar_remera</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>quitarremera()</slot>
