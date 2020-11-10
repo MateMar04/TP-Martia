@@ -282,11 +282,11 @@ background-color: rgb(136, 138, 133);</string>
    <sender>pb_agregar_pantalon</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>agregarpant()</slot>
+   <slot>agregar_pantalon()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>220</x>
-     <y>162</y>
+     <x>297</x>
+     <y>142</y>
     </hint>
     <hint type="destinationlabel">
      <x>193</x>
@@ -298,11 +298,11 @@ background-color: rgb(136, 138, 133);</string>
    <sender>pb_quitar_pantalon</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>quitarpant()</slot>
+   <slot>quitar_pantalon()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>528</x>
-     <y>165</y>
+     <x>738</x>
+     <y>142</y>
     </hint>
     <hint type="destinationlabel">
      <x>569</x>
@@ -314,11 +314,11 @@ background-color: rgb(136, 138, 133);</string>
    <sender>pb_agregar_buzo</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>agregarbuzo()</slot>
+   <slot>agregar_buzo()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>227</x>
-     <y>259</y>
+     <x>304</x>
+     <y>234</y>
     </hint>
     <hint type="destinationlabel">
      <x>333</x>
@@ -330,11 +330,11 @@ background-color: rgb(136, 138, 133);</string>
    <sender>pb_quitar_buzo</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>quitarbuzo()</slot>
+   <slot>quitar_buzo()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>485</x>
-     <y>270</y>
+     <x>738</x>
+     <y>234</y>
     </hint>
     <hint type="destinationlabel">
      <x>467</x>
@@ -346,11 +346,11 @@ background-color: rgb(136, 138, 133);</string>
    <sender>pb_agregar_remera</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>agregarremera()</slot>
+   <slot>agregar_remera()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>206</x>
-     <y>364</y>
+     <x>283</x>
+     <y>326</y>
     </hint>
     <hint type="destinationlabel">
      <x>233</x>
@@ -362,11 +362,11 @@ background-color: rgb(136, 138, 133);</string>
    <sender>pb_quitar_remera</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>quitarremera()</slot>
+   <slot>agregar_remera()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>556</x>
-     <y>367</y>
+     <x>738</x>
+     <y>326</y>
     </hint>
     <hint type="destinationlabel">
      <x>522</x>
@@ -376,11 +376,11 @@ background-color: rgb(136, 138, 133);</string>
   </connection>
  </connections>
  <slots>
-  <slot>agregarpant()</slot>
-  <slot>quitarpant()</slot>
-  <slot>agregarbuzo()</slot>
-  <slot>quitarbuzo()</slot>
-  <slot>agregarremera()</slot>
-  <slot>quitarremera()</slot>
+  <slot>agregar_pantalon()</slot>
+  <slot>quitar_pantalon()</slot>
+  <slot>agregar_buzo()</slot>
+  <slot>quitar_buzo()</slot>
+  <slot>agregar_remera()</slot>
+  <slot>quitar_remera()</slot>
  </slots>
 </ui>
