@@ -15,6 +15,7 @@ class MainWindow(QMainWindow):
         self.pantalones = 0
         self.buzos = 0
         self.remeras = 0
+        self.ventana_lista.show()
 
     @Slot()
     def agregar_pantalon(self):
