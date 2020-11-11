@@ -21,6 +21,8 @@ class MainWindow(QMainWindow):
     def agregar_pantalon(self):
         self.pantalones += int(self.ui.le_cant_pantalon.text())
         print(self.pantalones)
+        self.ventana_lista.agregar_prendas("pantalones", self.pantalones)
+
 
     @Slot()
     def quitar_pantalon(self):
@@ -46,7 +48,6 @@ class MainWindow(QMainWindow):
     def quitar_remera(self):
         self.remeras -= int(self.ui.le_cant_remera.text())
         print(self.remeras)
-
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
