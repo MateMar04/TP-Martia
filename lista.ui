@@ -59,11 +59,6 @@ font: 57 11pt &quot;Ubuntu&quot;;</string>
     </row>
     <column>
      <property name="text">
-      <string>Prendas</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
       <string>Cantidad</string>
      </property>
     </column>
