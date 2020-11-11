@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>472</width>
+    <width>478</width>
     <height>400</height>
    </rect>
   </property>
@@ -17,7 +17,7 @@
    <widget class="QTableWidget" name="tb_stock">
     <property name="geometry">
      <rect>
-      <x>-10</x>
+      <x>0</x>
       <y>0</y>
       <width>481</width>
       <height>381</height>
@@ -27,19 +27,44 @@
      <string notr="true">background-color: rgb(173, 127, 168);
 font: 57 11pt &quot;Ubuntu&quot;;</string>
     </property>
+    <row>
+     <property name="text">
+      <string>Jean</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Short</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Buzo Deportivo</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Buzo Clasico</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Remera m. Corta</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Remera m. Larga</string>
+     </property>
+    </row>
     <column>
      <property name="text">
-      <string>Pantalones</string>
+      <string>Prendas</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>Buzos</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Remeras</string>
+      <string>Cantidad</string>
      </property>
     </column>
    </widget>
