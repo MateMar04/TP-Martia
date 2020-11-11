@@ -49,10 +49,11 @@ class MainWindow(QMainWindow):
         self.remeras -= int(self.ui.le_cant_remera.text())
         print(self.remeras)
 
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
 
-    tiendaropa = MainWindow()
-    tiendaropa.show()
+    tienda_ropa = MainWindow()
+    tienda_ropa.show()
 
     sys.exit(app.exec_())
