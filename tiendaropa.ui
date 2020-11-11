@@ -362,7 +362,7 @@ background-color: rgb(136, 138, 133);</string>
    <sender>pb_quitar_remera</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>agregar_remera()</slot>
+   <slot>quitar_remera()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>738</x>

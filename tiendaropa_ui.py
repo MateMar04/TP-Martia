@@ -175,7 +175,7 @@ class Ui_MainWindow(object):
         self.pb_agregar_buzo.clicked.connect(MainWindow.agregar_buzo)
         self.pb_quitar_buzo.clicked.connect(MainWindow.quitar_buzo)
         self.pb_agregar_remera.clicked.connect(MainWindow.agregar_remera)
-        self.pb_quitar_remera.clicked.connect(MainWindow.agregar_remera)
+        self.pb_quitar_remera.clicked.connect(MainWindow.quitar_remera)
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
