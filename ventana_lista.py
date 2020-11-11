@@ -13,8 +13,5 @@ class ListWindow(QMainWindow):
         self.ui = Ui_ListWindow()
         self.ui.setupUi(self)
 
-    def agregar_prendas(self, prenda, cantidad):
-        row_position = self.ui.tb_stock.rowCount()
-        self.ui.tb_stock.insertRow(row_position)
-        self.ui.tb_stock.setItem(row_position, 0, QtWidgets.QTableWidgetItem(prenda))
-        self.ui.tb_stock.setItem(row_position, 1, QtWidgets.QTableWidgetItem(cantidad))
+    def agregar_prendas(self, f, c, cantidad):
+        self.ui.tb_stock.setItem(f, c, QtWidgets.QTableWidgetItem(str(cantidad)))
