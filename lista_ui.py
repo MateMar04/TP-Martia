@@ -24,26 +24,24 @@ class Ui_ListWindow(object):
         self.centralwidget = QWidget(ListWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.tb_stock = QTableWidget(self.centralwidget)
-        if (self.tb_stock.columnCount() < 2):
-            self.tb_stock.setColumnCount(2)
+        if (self.tb_stock.columnCount() < 1):
+            self.tb_stock.setColumnCount(1)
         __qtablewidgetitem = QTableWidgetItem()
         self.tb_stock.setHorizontalHeaderItem(0, __qtablewidgetitem)
-        __qtablewidgetitem1 = QTableWidgetItem()
-        self.tb_stock.setHorizontalHeaderItem(1, __qtablewidgetitem1)
         if (self.tb_stock.rowCount() < 6):
             self.tb_stock.setRowCount(6)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        self.tb_stock.setVerticalHeaderItem(0, __qtablewidgetitem1)
         __qtablewidgetitem2 = QTableWidgetItem()
-        self.tb_stock.setVerticalHeaderItem(0, __qtablewidgetitem2)
+        self.tb_stock.setVerticalHeaderItem(1, __qtablewidgetitem2)
         __qtablewidgetitem3 = QTableWidgetItem()
-        self.tb_stock.setVerticalHeaderItem(1, __qtablewidgetitem3)
+        self.tb_stock.setVerticalHeaderItem(2, __qtablewidgetitem3)
         __qtablewidgetitem4 = QTableWidgetItem()
-        self.tb_stock.setVerticalHeaderItem(2, __qtablewidgetitem4)
+        self.tb_stock.setVerticalHeaderItem(3, __qtablewidgetitem4)
         __qtablewidgetitem5 = QTableWidgetItem()
-        self.tb_stock.setVerticalHeaderItem(3, __qtablewidgetitem5)
+        self.tb_stock.setVerticalHeaderItem(4, __qtablewidgetitem5)
         __qtablewidgetitem6 = QTableWidgetItem()
-        self.tb_stock.setVerticalHeaderItem(4, __qtablewidgetitem6)
-        __qtablewidgetitem7 = QTableWidgetItem()
-        self.tb_stock.setVerticalHeaderItem(5, __qtablewidgetitem7)
+        self.tb_stock.setVerticalHeaderItem(5, __qtablewidgetitem6)
         self.tb_stock.setObjectName(u"tb_stock")
         self.tb_stock.setGeometry(QRect(0, 0, 481, 381))
         self.tb_stock.setStyleSheet(u"background-color: rgb(173, 127, 168);\n"
@@ -61,20 +59,18 @@ class Ui_ListWindow(object):
     def retranslateUi(self, ListWindow):
         ListWindow.setWindowTitle(QCoreApplication.translate("ListWindow", u"Stock de Ropa", None))
         ___qtablewidgetitem = self.tb_stock.horizontalHeaderItem(0)
-        ___qtablewidgetitem.setText(QCoreApplication.translate("ListWindow", u"Prendas", None));
-        ___qtablewidgetitem1 = self.tb_stock.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("ListWindow", u"Cantidad", None));
-        ___qtablewidgetitem2 = self.tb_stock.verticalHeaderItem(0)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("ListWindow", u"Jean", None));
-        ___qtablewidgetitem3 = self.tb_stock.verticalHeaderItem(1)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("ListWindow", u"Short", None));
-        ___qtablewidgetitem4 = self.tb_stock.verticalHeaderItem(2)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("ListWindow", u"Buzo Deportivo", None));
-        ___qtablewidgetitem5 = self.tb_stock.verticalHeaderItem(3)
-        ___qtablewidgetitem5.setText(QCoreApplication.translate("ListWindow", u"Buzo Clasico", None));
-        ___qtablewidgetitem6 = self.tb_stock.verticalHeaderItem(4)
-        ___qtablewidgetitem6.setText(QCoreApplication.translate("ListWindow", u"Remera m. Corta", None));
-        ___qtablewidgetitem7 = self.tb_stock.verticalHeaderItem(5)
-        ___qtablewidgetitem7.setText(QCoreApplication.translate("ListWindow", u"Remera m. Larga", None));
+        ___qtablewidgetitem.setText(QCoreApplication.translate("ListWindow", u"Cantidad", None));
+        ___qtablewidgetitem1 = self.tb_stock.verticalHeaderItem(0)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("ListWindow", u"Jean", None));
+        ___qtablewidgetitem2 = self.tb_stock.verticalHeaderItem(1)
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("ListWindow", u"Short", None));
+        ___qtablewidgetitem3 = self.tb_stock.verticalHeaderItem(2)
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("ListWindow", u"Buzo Deportivo", None));
+        ___qtablewidgetitem4 = self.tb_stock.verticalHeaderItem(3)
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("ListWindow", u"Buzo Clasico", None));
+        ___qtablewidgetitem5 = self.tb_stock.verticalHeaderItem(4)
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("ListWindow", u"Remera m. Corta", None));
+        ___qtablewidgetitem6 = self.tb_stock.verticalHeaderItem(5)
+        ___qtablewidgetitem6.setText(QCoreApplication.translate("ListWindow", u"Remera m. Larga", None));
     # retranslateUi
 
