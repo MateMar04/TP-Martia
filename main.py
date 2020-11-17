@@ -15,7 +15,40 @@ class MainWindow(QMainWindow):
         self.pantalones = 0
         self.buzos = 0
         self.remeras = 0
+        self.precio_pantalon = 100
+        self.precio_buzo = 150
+        self.precio_remera = 50
+
         self.ventana_lista.show()
+
+    @Slot()
+    def actualizar_precio_slot(self):
+        #total = (int(self.ui.le_cant_remera.text()) * self.precio_remera) + (int(self.ui.le_cant_buzo.text()) * self.precio_buzo) + (int(self.ui.le_cant_pantalon.text()) * self.precio_pantalon)
+
+        if len(self.ui.le_cant_pantalon.text()) > 0:
+            self.ui.lb_precio_pantalones.setText(str(int(self.ui.le_cant_pantalon.text()) * self.precio_pantalon))
+            #pantalones = int(self.ui.le_cant_pantalon.text()) * self.precio_pantalon
+        else:
+            self.ui.lb_precio_pantalones.setText("0")
+            #pantalones = 0
+
+        if len(self.ui.le_cant_buzo.text()) > 0:
+            self.ui.lb_precio_buzo.setText(str(int(self.ui.le_cant_buzo.text()) * self.precio_buzo))
+            #buzo = int(self.ui.le_cant_buzo.text()) * self.precio_buzo
+        else:
+            self.ui.lb_precio_buzo.setText("0")
+            #buzo = 0
+
+        if len(self.ui.le_cant_remera.text()) > 0:
+            self.ui.lb_precio_remera.setText(str(int(self.ui.le_cant_remera.text()) * self.precio_remera))
+            #remeras = int(self.ui.le_cant_remera.text()) * self.precio_remera
+        else:
+            self.ui.lb_precio_remera.setText("0")
+            #remeras = 0
+
+        #self.ui.lb_total.setText(str(remeras + buzo + pantalones))
+
+
 
     @Slot()
     def agregar_pantalon(self):

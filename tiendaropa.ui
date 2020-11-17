@@ -6,9 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>788</width>
-    <height>797</height>
+    <width>927</width>
+    <height>343</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>927</width>
+    <height>343</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>927</width>
+    <height>343</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -19,31 +31,11 @@ background-color: rgb(173, 127, 168);
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="lb_stock_2">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>390</y>
-      <width>121</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">b
-background-color: rgb(65, 221, 218);</string>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; font-style:italic; color:#000000;&quot;&gt;stock&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
    <widget class="QWidget" name="formLayoutWidget">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>70</y>
+      <y>0</y>
       <width>711</width>
       <height>299</height>
      </rect>
@@ -262,6 +254,110 @@ background-color: rgb(136, 138, 133);</string>
      <string/>
     </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>70</y>
+      <width>51</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Precio:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>160</y>
+      <width>51</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Precio:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>250</y>
+      <width>51</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Precio:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_precio_pantalones">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>70</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_precio_buzo">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>160</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_precio_remera">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>250</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>290</y>
+      <width>51</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Total:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_total">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>290</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
@@ -285,8 +381,8 @@ background-color: rgb(136, 138, 133);</string>
    <slot>agregar_pantalon()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>297</x>
-     <y>142</y>
+     <x>374</x>
+     <y>72</y>
     </hint>
     <hint type="destinationlabel">
      <x>193</x>
@@ -302,7 +398,7 @@ background-color: rgb(136, 138, 133);</string>
    <hints>
     <hint type="sourcelabel">
      <x>738</x>
-     <y>142</y>
+     <y>72</y>
     </hint>
     <hint type="destinationlabel">
      <x>569</x>
@@ -317,8 +413,8 @@ background-color: rgb(136, 138, 133);</string>
    <slot>agregar_buzo()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>304</x>
-     <y>234</y>
+     <x>381</x>
+     <y>164</y>
     </hint>
     <hint type="destinationlabel">
      <x>333</x>
@@ -334,7 +430,7 @@ background-color: rgb(136, 138, 133);</string>
    <hints>
     <hint type="sourcelabel">
      <x>738</x>
-     <y>234</y>
+     <y>164</y>
     </hint>
     <hint type="destinationlabel">
      <x>467</x>
@@ -349,12 +445,12 @@ background-color: rgb(136, 138, 133);</string>
    <slot>agregar_remera()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>283</x>
-     <y>326</y>
+     <x>360</x>
+     <y>256</y>
     </hint>
     <hint type="destinationlabel">
      <x>233</x>
-     <y>511</y>
+     <y>342</y>
     </hint>
    </hints>
   </connection>
@@ -366,11 +462,59 @@ background-color: rgb(136, 138, 133);</string>
    <hints>
     <hint type="sourcelabel">
      <x>738</x>
-     <y>326</y>
+     <y>256</y>
     </hint>
     <hint type="destinationlabel">
      <x>522</x>
-     <y>496</y>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>le_cant_pantalon</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>actualizar_precio_slot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>138</x>
+     <y>98</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-13</x>
+     <y>416</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>le_cant_buzo</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>actualizar_precio_slot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>112</x>
+     <y>184</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>26</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>le_cant_remera</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>actualizar_precio_slot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>173</x>
+     <y>274</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>92</x>
+     <y>311</y>
     </hint>
    </hints>
   </connection>
@@ -382,5 +526,6 @@ background-color: rgb(136, 138, 133);</string>
   <slot>quitar_buzo()</slot>
   <slot>agregar_remera()</slot>
   <slot>quitar_remera()</slot>
+  <slot>actualizar_precio_slot()</slot>
  </slots>
 </ui>
