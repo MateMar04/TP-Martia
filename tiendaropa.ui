@@ -7,19 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>927</width>
-    <height>343</height>
+    <height>430</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>927</width>
-    <height>343</height>
+    <height>430</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>927</width>
-    <height>343</height>
+    <height>430</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -30,51 +30,49 @@
 background-color: rgb(173, 127, 168);
 </string>
   </property>
+  <property name="iconSize">
+   <size>
+    <width>30</width>
+    <height>30</height>
+   </size>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="formLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>20</x>
       <y>0</y>
       <width>711</width>
-      <height>299</height>
+      <height>363</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout">
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_2">
-       <property name="toolTip">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-       <property name="text">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'URW Gothic L'; font-size:11pt; font-weight:56; font-style:normal;&quot;&gt;
-&lt;p align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#8f5902;&quot;&gt;pantalon&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QComboBox" name="cb_pantalon">
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(186, 189, 182);</string>
-       </property>
-       <item>
-        <property name="text">
-         <string>jean</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>short</string>
-        </property>
-       </item>
-      </widget>
-     </item>
      <item row="1" column="1">
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout"/>
+     </item>
+     <item row="4" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#2e3436;&quot;&gt;cantidad&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="le_cant_pantalon">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(136, 138, 133);</string>
+       </property>
+       <property name="inputMask">
+        <string>999</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
         <widget class="QPushButton" name="pb_agregar_pantalon">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(173, 127, 168);</string>
@@ -84,7 +82,7 @@ p, li { white-space: pre-wrap; }
          </property>
         </widget>
        </item>
-       <item row="0" column="1">
+       <item>
         <widget class="QPushButton" name="pb_quitar_pantalon">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(136, 138, 133);
@@ -97,14 +95,14 @@ background-color: rgb(173, 127, 168);</string>
        </item>
       </layout>
      </item>
-     <item row="3" column="0">
+     <item row="9" column="0">
       <widget class="QLabel" name="label_4">
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#8f5902;&quot;&gt;buzo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
-     <item row="3" column="1">
+     <item row="9" column="1">
       <widget class="QComboBox" name="cb_buzo">
        <property name="styleSheet">
         <string notr="true">background-color: rgb(186, 189, 182);</string>
@@ -121,42 +119,17 @@ background-color: rgb(173, 127, 168);</string>
        </item>
       </widget>
      </item>
-     <item row="6" column="0">
-      <widget class="QLabel" name="label_3">
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#8f5902;&quot;&gt;remera&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="1">
-      <widget class="QComboBox" name="cb_remera">
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(186, 189, 182);</string>
-       </property>
-       <item>
-        <property name="text">
-         <string>corta</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>larga</string>
-        </property>
-       </item>
-      </widget>
-     </item>
-     <item row="8" column="0">
-      <widget class="QLabel" name="cantidad">
+     <item row="12" column="0">
+      <widget class="QLabel" name="label_5">
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#2e3436;&quot;&gt;cantidad&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
-     <item row="8" column="1">
-      <widget class="QLineEdit" name="le_cant_remera">
+     <item row="12" column="1">
+      <widget class="QLineEdit" name="le_cant_buzo">
        <property name="styleSheet">
-        <string notr="true">
-background-color: rgb(136, 138, 133);</string>
+        <string notr="true">background-color: rgb(136, 138, 133);</string>
        </property>
        <property name="inputMask">
         <string>999</string>
@@ -166,8 +139,8 @@ background-color: rgb(136, 138, 133);</string>
        </property>
       </widget>
      </item>
-     <item row="4" column="1">
-      <layout class="QHBoxLayout" name="horizontalLayout">
+     <item row="14" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
         <widget class="QPushButton" name="pb_agregar_buzo">
          <property name="text">
@@ -184,8 +157,53 @@ background-color: rgb(136, 138, 133);</string>
        </item>
       </layout>
      </item>
-     <item row="7" column="1">
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item row="15" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#8f5902;&quot;&gt;remera&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="1">
+      <widget class="QComboBox" name="cb_remera">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(186, 189, 182);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>corta</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>larga</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="17" column="0">
+      <widget class="QLabel" name="cantidad">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#2e3436;&quot;&gt;cantidad&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="1">
+      <widget class="QLineEdit" name="le_cant_remera">
+       <property name="styleSheet">
+        <string notr="true">
+background-color: rgb(136, 138, 133);</string>
+       </property>
+       <property name="inputMask">
+        <string>999</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
        <item>
         <widget class="QPushButton" name="pb_agregar_remera">
          <property name="text">
@@ -202,40 +220,34 @@ background-color: rgb(136, 138, 133);</string>
        </item>
       </layout>
      </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="label_5">
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#2e3436;&quot;&gt;cantidad&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_6">
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#2e3436;&quot;&gt;cantidad&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QLineEdit" name="le_cant_buzo">
+     <item row="3" column="1">
+      <widget class="QComboBox" name="cb_pantalon">
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(136, 138, 133);</string>
+        <string notr="true">background-color: rgb(186, 189, 182);</string>
        </property>
-       <property name="inputMask">
-        <string>999</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
+       <item>
+        <property name="text">
+         <string>jean</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>short</string>
+        </property>
+       </item>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="QLineEdit" name="le_cant_pantalon">
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(136, 138, 133);</string>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
-       <property name="inputMask">
-        <string>999</string>
+       <property name="text">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'URW Gothic L'; font-size:11pt; font-weight:56; font-style:normal;&quot;&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#8f5902;&quot;&gt;pantalon&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
@@ -358,6 +370,42 @@ background-color: rgb(136, 138, 133);</string>
      <string/>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>0</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(46, 52, 54);
+</string>
+    </property>
+    <property name="text">
+     <string>Cerrar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>30</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(46, 52, 54);
+</string>
+    </property>
+    <property name="text">
+     <string>Borrar Stock</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
@@ -381,8 +429,8 @@ background-color: rgb(136, 138, 133);</string>
    <slot>agregar_pantalon()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>374</x>
-     <y>72</y>
+     <x>409</x>
+     <y>136</y>
     </hint>
     <hint type="destinationlabel">
      <x>193</x>
@@ -397,8 +445,8 @@ background-color: rgb(136, 138, 133);</string>
    <slot>quitar_pantalon()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>738</x>
-     <y>72</y>
+     <x>728</x>
+     <y>136</y>
     </hint>
     <hint type="destinationlabel">
      <x>569</x>
@@ -413,8 +461,8 @@ background-color: rgb(136, 138, 133);</string>
    <slot>agregar_buzo()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>381</x>
-     <y>164</y>
+     <x>409</x>
+     <y>252</y>
     </hint>
     <hint type="destinationlabel">
      <x>333</x>
@@ -429,8 +477,8 @@ background-color: rgb(136, 138, 133);</string>
    <slot>quitar_buzo()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>738</x>
-     <y>164</y>
+     <x>728</x>
+     <y>252</y>
     </hint>
     <hint type="destinationlabel">
      <x>467</x>
@@ -445,8 +493,8 @@ background-color: rgb(136, 138, 133);</string>
    <slot>agregar_remera()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>360</x>
-     <y>256</y>
+     <x>409</x>
+     <y>350</y>
     </hint>
     <hint type="destinationlabel">
      <x>233</x>
@@ -461,8 +509,8 @@ background-color: rgb(136, 138, 133);</string>
    <slot>quitar_remera()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>738</x>
-     <y>256</y>
+     <x>728</x>
+     <y>350</y>
     </hint>
     <hint type="destinationlabel">
      <x>522</x>
@@ -493,8 +541,8 @@ background-color: rgb(136, 138, 133);</string>
    <slot>actualizar_precio_slot()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>112</x>
-     <y>184</y>
+     <x>264</x>
+     <y>215</y>
     </hint>
     <hint type="destinationlabel">
      <x>26</x>
@@ -509,12 +557,92 @@ background-color: rgb(136, 138, 133);</string>
    <slot>actualizar_precio_slot()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>173</x>
-     <y>274</y>
+     <x>325</x>
+     <y>319</y>
     </hint>
     <hint type="destinationlabel">
      <x>92</x>
      <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>cerrar_ventana()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>865</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>899</x>
+     <y>390</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cb_pantalon</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>actualizar_precio_slot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>215</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>224</x>
+     <y>27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cb_buzo</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>actualizar_precio_slot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>177</x>
+     <y>167</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>63</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cb_remera</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>actualizar_precio_slot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>324</x>
+     <y>275</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>49</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>borrar_stock()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>831</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>861</x>
+     <y>137</y>
     </hint>
    </hints>
   </connection>
@@ -527,5 +655,7 @@ background-color: rgb(136, 138, 133);</string>
   <slot>agregar_remera()</slot>
   <slot>quitar_remera()</slot>
   <slot>actualizar_precio_slot()</slot>
+  <slot>cerrar_ventana()</slot>
+  <slot>borrar_stock()</slot>
  </slots>
 </ui>

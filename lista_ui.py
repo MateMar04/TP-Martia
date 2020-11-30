@@ -20,7 +20,7 @@ class Ui_ListWindow(object):
     def setupUi(self, ListWindow):
         if not ListWindow.objectName():
             ListWindow.setObjectName(u"ListWindow")
-        ListWindow.resize(478, 400)
+        ListWindow.resize(470, 388)
         self.centralwidget = QWidget(ListWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.tb_stock = QTableWidget(self.centralwidget)
@@ -43,13 +43,12 @@ class Ui_ListWindow(object):
         __qtablewidgetitem6 = QTableWidgetItem()
         self.tb_stock.setVerticalHeaderItem(5, __qtablewidgetitem6)
         self.tb_stock.setObjectName(u"tb_stock")
-        self.tb_stock.setGeometry(QRect(0, 0, 481, 381))
+        self.tb_stock.setGeometry(QRect(0, 0, 481, 391))
         self.tb_stock.setStyleSheet(u"background-color: rgb(173, 127, 168);\n"
 "font: 57 11pt \"Ubuntu\";")
+        self.tb_stock.horizontalHeader().setDefaultSectionSize(325)
+        self.tb_stock.verticalHeader().setDefaultSectionSize(45)
         ListWindow.setCentralWidget(self.centralwidget)
-        self.statusbar = QStatusBar(ListWindow)
-        self.statusbar.setObjectName(u"statusbar")
-        ListWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(ListWindow)
 

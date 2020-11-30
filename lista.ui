@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>478</width>
-    <height>400</height>
+    <width>470</width>
+    <height>388</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,13 +20,19 @@
       <x>0</x>
       <y>0</y>
       <width>481</width>
-      <height>381</height>
+      <height>391</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(173, 127, 168);
 font: 57 11pt &quot;Ubuntu&quot;;</string>
     </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>325</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>45</number>
+    </attribute>
     <row>
      <property name="text">
       <string>Jean</string>
@@ -64,8 +70,10 @@ font: 57 11pt &quot;Ubuntu&quot;;</string>
     </column>
    </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
+ <slots>
+  <slot>borrar_stock()</slot>
+ </slots>
 </ui>

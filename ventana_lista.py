@@ -1,8 +1,5 @@
-import sys
-
 from PySide2 import QtWidgets
-from PySide2.QtWidgets import QMainWindow, QApplication
-from PySide2.QtCore import Slot
+from PySide2.QtWidgets import QMainWindow
 
 from lista_ui import Ui_ListWindow
 
