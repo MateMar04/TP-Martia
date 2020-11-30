@@ -27,6 +27,13 @@ class MainWindow(QMainWindow):
         self.precio_remera_larga = 50
         self.precio_remera_corta = 30
 
+        self.ventana_lista.agregar_prendas(0, 0, self.jeans)
+        self.ventana_lista.agregar_prendas(0, 1, self.shorts)
+        self.ventana_lista.agregar_prendas(0, 2, self.buzos_deportivos)
+        self.ventana_lista.agregar_prendas(0, 3, self.buzos_clasicos)
+        self.ventana_lista.agregar_prendas(0, 4, self.remeras_cortas)
+        self.ventana_lista.agregar_prendas(0, 5, self.remeras_largas)
+
 
         self.ventana_lista.show()
 
