@@ -1,3 +1,4 @@
+import pickle
 import sys
 from PySide2.QtWidgets import QMainWindow, QApplication
 from PySide2.QtCore import Slot
@@ -13,12 +14,14 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
         self.ventana_lista = ListWindow()
 
-        self.jeans = 0
-        self.shorts = 0
-        self.buzos_deportivos = 0
-        self.buzos_clasicos = 0
-        self.remeras_cortas = 0
-        self.remeras_largas = 0
+        self.datos = self.read_file()
+
+        self.jeans = self.datos[0]
+        self.shorts = self.datos[1]
+        self.buzos_deportivos = self.datos[2]
+        self.buzos_clasicos = self.datos[3]
+        self.remeras_cortas = self.datos[4]
+        self.remeras_largas = self.datos[5]
 
         self.precio_jeans = 100
         self.precio_shorts = 80
@@ -33,7 +36,6 @@ class MainWindow(QMainWindow):
         self.ventana_lista.agregar_prendas(0, 3, self.buzos_clasicos)
         self.ventana_lista.agregar_prendas(0, 4, self.remeras_cortas)
         self.ventana_lista.agregar_prendas(0, 5, self.remeras_largas)
-
 
         self.ventana_lista.show()
 
@@ -93,7 +95,6 @@ class MainWindow(QMainWindow):
             self.shorts += int(self.ui.le_cant_pantalon.text())
             self.ventana_lista.agregar_prendas(0, 1, self.shorts)
 
-
     @Slot()
     def quitar_pantalon(self):
         if self.ui.cb_pantalon.currentText() == "jean":
@@ -152,13 +153,26 @@ class MainWindow(QMainWindow):
         self.remeras_cortas -= self.remeras_cortas
         self.remeras_largas -= self.remeras_largas
 
-
         self.ventana_lista.agregar_prendas(0, 0, self.jeans)
         self.ventana_lista.agregar_prendas(0, 1, self.shorts)
         self.ventana_lista.agregar_prendas(0, 2, self.buzos_deportivos)
         self.ventana_lista.agregar_prendas(0, 3, self.buzos_clasicos)
         self.ventana_lista.agregar_prendas(0, 4, self.remeras_cortas)
         self.ventana_lista.agregar_prendas(0, 5, self.remeras_largas)
+
+    @Slot()
+    def save_file(self):
+        with open("datos.v", "wb") as f:
+            self.datos = [self.jeans, self.shorts, self.buzos_deportivos, self.buzos_clasicos, self.remeras_cortas, self.remeras_largas]
+            pickle.dump(self.datos, f)
+
+    def read_file(self):
+        try:
+            with open("datos.v", "rb") as f:
+                datos = pickle.load(f)
+        except FileNotFoundError:
+            datos = []
+        return datos
 
 
 if __name__ == "__main__":

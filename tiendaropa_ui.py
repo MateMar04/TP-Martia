@@ -205,10 +205,13 @@ class Ui_MainWindow(object):
         self.pushButton_2.setStyleSheet(u"\n"
 "background-color: rgb(46, 52, 54);\n"
 "")
+        self.pushButton_3 = QPushButton(self.centralwidget)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setGeometry(QRect(20, 380, 89, 25))
+        self.pushButton_3.setStyleSheet(u"\n"
+"background-color: rgb(46, 52, 54);\n"
+"")
         MainWindow.setCentralWidget(self.centralwidget)
-        self.statusbar = QStatusBar(MainWindow)
-        self.statusbar.setObjectName(u"statusbar")
-        MainWindow.setStatusBar(self.statusbar)
         self.toolBar = QToolBar(MainWindow)
         self.toolBar.setObjectName(u"toolBar")
         MainWindow.addToolBar(Qt.TopToolBarArea, self.toolBar)
@@ -228,6 +231,7 @@ class Ui_MainWindow(object):
         self.cb_buzo.currentTextChanged.connect(MainWindow.actualizar_precio_slot)
         self.cb_remera.currentTextChanged.connect(MainWindow.actualizar_precio_slot)
         self.pushButton_2.clicked.connect(MainWindow.borrar_stock)
+        self.pushButton_3.clicked.connect(MainWindow.save_file)
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
@@ -278,6 +282,7 @@ class Ui_MainWindow(object):
         self.lb_total.setText("")
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Cerrar", None))
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Borrar Stock", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Guardar", None))
         self.toolBar.setWindowTitle(QCoreApplication.translate("MainWindow", u"toolBar", None))
     # retranslateUi
 

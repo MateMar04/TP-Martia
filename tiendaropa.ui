@@ -406,8 +406,25 @@ background-color: rgb(46, 52, 54);
      <string>Borrar Stock</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>380</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(46, 52, 54);
+</string>
+    </property>
+    <property name="text">
+     <string>Guardar</string>
+    </property>
+   </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
    <property name="windowTitle">
     <string>toolBar</string>
@@ -646,6 +663,22 @@ background-color: rgb(46, 52, 54);
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>save_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>401</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>240</x>
+     <y>398</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>agregar_pantalon()</slot>
@@ -657,5 +690,6 @@ background-color: rgb(46, 52, 54);
   <slot>actualizar_precio_slot()</slot>
   <slot>cerrar_ventana()</slot>
   <slot>borrar_stock()</slot>
+  <slot>save_file()</slot>
  </slots>
 </ui>
